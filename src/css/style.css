@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 20px 20px 0px 20px;
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    display: flex;
+    align-items: center;
+    background-color: #94BDF2;
+    width: 84%;
+    height: 30px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+header img {
+    width: 200px;
+    margin-right: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 12px;
+    border: none;
+}
+
+.text {
+    flex-shrink: 0;
+    font-weight: bold;
+    text-align: end;
+    width: 200px;
+}
+
+.container-name {
+    display: flex;
+    align-items: start;
+}
+
+.container-name label {
+    margin: 0px 4px 0px 12px;
+}
+
+.age {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin: 0px 4px 0px 12px;
+}
+
+.age .age-checkbox {
+    display: flex;
+}
+
+#age {
+    height: 100%;
+}
+
+.age .age-checkbox label {
+    margin-left: 4px;
+}
+
+.sexo {
+    display: flex;
+    align-items: center;
+    margin: 0px 4px 0px 12px;
+}
+
+.sexo label {
+    margin: 0px 12px 0px 4px;
+}
+
+.service-terms {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 12px;
+}
+
+.service-terms div {
+    display: flex;
+    flex-direction: column;
+    width: 62%;
+    min-width: 490px;
+}
+
+#service-terms {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    height: 60px;
+    resize: none;
+}
+
+.service-terms div p {
+    width: 98%;
+    margin: 4px 0px;
+}
+
+.service-terms .print {
+    display: flex;
+    justify-content: end;
+    margin: 6px 0px;
+}
+
+.submit {
+    margin-left: 212px;
+    font-size: 16px;
+    padding: 2px 8px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #94BDF2;
+    font-size: 14px;
+    height: 30px;
+}
+
+footer p {
+    margin-right: 4px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #2A4594;
+}
+
+.createdBy {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.contentMobile {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .container-terms {
+        flex-direction: row;
+        flex-wrap: nowrap;   
+    }    
+}
+
+@media (max-width: 767px){
+    .contentDesktop {
+        display: none;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        min-width: 100%;
+    }
+    .contentMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        max-width: 90%;
+        width: 100%;
+    }
+    .contentMobile h1,
+    p {
+        text-align: center;
+        margin: 4px 0px;
+    }
+    .contentMobile strong {
+        font-size: small;
+        text-align: center;
+        text-decoration: underline;
+        margin: 4px 0px;
+    }
+    .contentMobile .gif {
+        width:100%;
+        height:0;
+        padding-bottom:56%;
+        position:relative;
+        margin: 4px 0px;
+    }
+    .contentMobile span {
+        text-decoration: none;
+        font-size: 2vw;
+        margin: 4px 0px;
+    }
+    .contentMobile span a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentMobile p {
+        font-size: 12px;
+    }
+    .contentMobile strong {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 364px) {
+    .contentMobile p {
+        font-size: 10px;
+    }
+    .contentMobile strong {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 310px) {
+    .contentMobile p {
+        font-size: 8px;
+    }
+    .contentMobile strong {
+        font-size: 8px;
+    }
+}
